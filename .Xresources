@@ -1,0 +1,83 @@
+!URxvt*font:         -artwiz-lime-medium-r-normal-*-10-110-75-75-m-50-iso8859-1
+!URxvt*boldFont:     -artwiz-lime-medium-r-normal-*-10-110-75-75-m-50-iso8859-1
+
+URxvt*background:   #333333
+URxvt*foreground:   #cccccc
+URxvt*cursorColor:  #999999
+URxvt*colorBD:      #ffffff
+URxvt*colorUL:      #ffff99
+
+!BLK
+URxvt*color0:       #666666
+URxvt*color8:       #999999
+!RED
+URxvt*color1:       #CC6699
+URxvt*color9:	    #FF99CC
+!GRN
+URxvt*color2:       #99CC66
+URxvt*color10:      #CCFF99
+!YEL
+URxvt*color3:       #CC9966
+URxvt*color11:      #FFCC99
+!BLU
+URxvt*color4:       #6699CC
+URxvt*color12:      #99CCFF
+!MAG
+URxvt*color5:       #9966CC
+URxvt*color13:      #CC99FF
+!CYN
+URxvt*color6:       #66CC99
+URxvt*color14:      #99FFCC
+!WHT
+URxvt*color7:       #CCCCCC
+URxvt*color15:      #FFFFFF
+!urxvt fonts: 
+
+URxvt*font: xft:Monospace:pixelsize=12
+URxvt*boldFont: xft:Monospace:bold:pixelsize=12
+
+
+!urxvt extensions:
+
+URxvt.perl-ext-common:  default,matcher,tabbedex,clipboard
+
+!enabling clickable links:
+
+URxvt.urlLauncher:      /usr/bin/firefox
+URxvt.matcher.button:   1 
+
+!urxvt scrolling options and cursor style:
+
+URxvt*saveLines: 12000
+URxvt*scrollstyle:plain
+URxvt*scrollBar: false
+URxvt*cursorBlink: true
+URxvt*cursorUnderline: true
+
+! urxvt tabs settings:
+
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 2
+URxvt.tabbed.tab-bg: 8
+URxvt.tabbed.autohide:  yes
+URxvt.tabbed.new-button:  no
+URxvt.tabbed.title: noUrxvt.color12: rgb:5c/5c/ff
+
+
+! ROFI Color theme
+rofi.color-enabled: true
+
+! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
+rofi.color-normal:  #4f5563,  #819396,  #4f5563, #003642,  #819396
+rofi.color-active:  #4f5563,  #008ed4,  #4f5563,  #003642,  #008ed4
+rofi.color-urgent:  #e53935,  #da4281,  #e53935,  #003642,  #da4281
+
+!                  'background', 'border'
+rofi.color-window: #fdf6e3 
+
+rofi.font: System San Francisco Display 10
+
+URxvt.iso14755: False
+URxvt.keysym.Control-C: perl:clipboard:copy
+URxvt.keysym.Control-V: perl:clipboard:paste

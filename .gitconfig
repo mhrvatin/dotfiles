@@ -1,0 +1,7 @@
+[user]
+	name = Marcus Hrvatin
+	email = marcus@hrvatin.se
+[core]
+	editor = vim
+[push]
+	default = simple
