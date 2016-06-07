@@ -151,8 +151,8 @@ bindsym $mod+r mode "resize"
 # color variables
 set $bg-color 	         #303030
 set $inactive-bg-color   #303030
-set $text-color          #f3f4f5
-set $inactive-text-color #8a8a8a
+set $text-color          #E0E0E0
+set $inactive-text-color #757575
 set $urgent-bg-color     #F44336
 
 # window colors
