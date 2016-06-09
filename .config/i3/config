@@ -149,9 +149,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # color variables
-set $bg-color 	         #303030
-set $inactive-bg-color   #303030
-set $text-color          #E0E0E0
+set $bg-color 	         #112938
+set $inactive-bg-color   #112938
+set $text-color          #fafafa
 set $inactive-text-color #757575
 set $urgent-bg-color     #F44336
 
@@ -179,14 +179,19 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 }
 
 # set wallpaper
-exec_always --no-startup-id feh --bg-scale /home/macke/pictures/XtdsS4Q.jpg
+exec_always --no-startup-id feh --bg-scale /home/macke/pictures/o2bTNqW.png
 
 # run at startup
 exec urxvt
 exec compton -b
 exec xset r rate 200 30
-exec xset s off
 exec ~/scripts/disable-touchpad-typding.sh
+
+# disable screensaver
+exec xset s off
+exec xset -dpms
+exec setterm -blank 0
+exec setterm -powerdown 0
 
 # bind volume media keys
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #inc
