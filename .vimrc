@@ -17,7 +17,7 @@ highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
 " set color scheme
-colorscheme molokai
+colorscheme monokai
 syntax enable
 let g:molokai_original = 1
 

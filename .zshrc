@@ -5,8 +5,8 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="af-magic"
-ZSH_THEME="random"
+ZSH_THEME="af-magic"
+#ZSH_THEME="random"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -86,5 +86,6 @@ source $ZSH/oh-my-zsh.sh
 
 alias 'home=cd ~/'
 alias 'skola=cd ~/documents/skola/'
-alias 'hysus=sudo pm-suspend-hybrid'
-alias 'hibernate=sudo pm-hibernate'
+alias 'hysus=systemctl hybrid-sleep'
+alias 'hibernate=systemctl hibernate'
+alias 'reboot=systemctl reboot'
