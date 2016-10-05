@@ -5,7 +5,7 @@ set $mod Mod4
 font pango:System San Francisco Display 10
 
 # lock
-bindsym $mod+Shift+x exec i3lock -c 4F5563
+bindsym $mod+Shift+x exec lock -p 
 
 # thin borders
 #hide_edge_borders both
@@ -67,12 +67,13 @@ bindsym $mod+a focus parent
 # fontawesome 4.6.3
 # workspace1   = terminal
 # workspace2   = chrome
-# workspace3-8 = linux
+# workspace3   = pencil
+# workspace4-8 = linux
 # workspace9   = soundcloud
 # workspace0   = linux
 set $workspace1 "1 &#xf120;"
 set $workspace2 "2 &#xf268;"
-set $workspace3 "3 &#xf17c;"
+set $workspace3 "3 &#xf040;"
 set $workspace4 "4 &#xf17c;"
 set $workspace5 "5 &#xf17c;"
 set $workspace6 "6 &#xf17c;"
@@ -149,8 +150,14 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # color variables
-set $bg-color 	         #112938
-set $inactive-bg-color   #112938
+# snowy
+#set $bg-color 	          #112938
+#set $inactive-bg-color   #112938
+
+# stormtrooper
+set $bg-color            #000000
+set $inactive-bg-color   #000000
+
 set $text-color          #fafafa
 set $inactive-text-color #757575
 set $urgent-bg-color     #F44336
@@ -179,7 +186,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 }
 
 # set wallpaper
-exec_always --no-startup-id feh --bg-scale /home/macke/pictures/o2bTNqW.png
+exec_always --no-startup-id feh --bg-scale /home/macke/pictures/hHuFCed.jpg
 
 # run at startup
 exec urxvt

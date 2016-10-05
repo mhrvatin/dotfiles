@@ -5,7 +5,9 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="af-magic"
+#ZSH_THEME="af-magic_custom-macke"
+ZSH_THEME="nicoulaj_custom-macke"
+#ZSH_THEME="wedisagree"
 #ZSH_THEME="random"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -41,7 +43,7 @@ ENABLE_CORRECTION="true"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -50,7 +52,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize)
+plugins=(git colorize ubuntu)
 
 # User configuration
 
@@ -85,7 +87,13 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias 'home=cd ~/'
+alias 'vimz=vim ~/.zshrc'
+alias 'srcz=source ~/.zshrc'
 alias 'skola=cd ~/documents/skola/'
 alias 'hysus=systemctl hybrid-sleep'
 alias 'hibernate=systemctl hibernate'
 alias 'reboot=systemctl reboot'
+alias 'binero=ssh 139580_mhrvatin@ssh.binero.se'
+alias 'digm=ssh macke@vps.hrvatin.se'
+alias 'digr=ssh root@vps.hrvatin.se'
+alias 'copy=xclip -sel clip'

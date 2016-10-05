@@ -1,18 +1,26 @@
 !URxvt*font:         -artwiz-lime-medium-r-normal-*-10-110-75-75-m-50-iso8859-1
 !URxvt*boldFont:     -artwiz-lime-medium-r-normal-*-10-110-75-75-m-50-iso8859-1
 
-URxvt*background:   #516978
+! snowy
+!URxvt*background:   #516978
+!URxvt*foreground:   #cccccc
+!URxvt*cursorColor:  #999999
+!URxvt*colorBD:      #ffffff
+!URxvt*colorUL:      #ffff99
+
+! stormtrooper
+URxvt*background:   #1a1a1a
 URxvt*foreground:   #cccccc
-URxvt*cursorColor:  #999999
+URxvt*cursorColor:  #fd50a2
 URxvt*colorBD:      #ffffff
-URxvt*colorUL:      #ffff99
+URxvt*colorUL:      #ffffff
 
 !BLK
 URxvt*color0:       #666666
 URxvt*color8:       #999999
 !RED
 URxvt*color1:       #CC6699
-URxvt*color9:	    #FF99CC
+URxvt*color9:	      #FF99CC
 !GRN
 URxvt*color2:       #99CC66
 URxvt*color10:      #CCFF99
@@ -66,11 +74,18 @@ URxvt.tabbed.title: noUrxvt.color12: rgb:5c/5c/ff
 
 
 ! ROFI Color theme
+! snowy
 rofi.color-enabled: true
-rofi.color-window: #112938,#fafafa
-rofi.color-normal: #112938, #fafafa, #112938, #516978, #fafafa
+!rofi.color-window: #112938,#fafafa
+!rofi.color-normal: #112938, #fafafa, #112938, #516978, #fafafa
+!rofi.color-active: #fafafa, #112938, #fafafa, #fafafa, #112938
+!rofi.color-urgent: #f44336, #fafafa, #f44336, #f44336, #fafafa
+
+rofi.color-window: #0f0f0f,#fafafa
+rofi.color-normal: #0f0f0f, #fafafa, #0f0f0f, #fd50a2, #fafafa
 rofi.color-active: #fafafa, #112938, #fafafa, #fafafa, #112938
 rofi.color-urgent: #f44336, #fafafa, #f44336, #f44336, #fafafa
+
 rofi.font: System San Francisco Display 10
 
 URxvt.iso14755: False
