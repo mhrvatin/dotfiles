@@ -6,8 +6,8 @@
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="af-magic_custom-macke"
-ZSH_THEME="nicoulaj_custom-macke"
-#ZSH_THEME="wedisagree"
+#ZSH_THEME="nicoulaj_custom-macke"
+ZSH_THEME="wedisagree_custom-macke_mallard"
 #ZSH_THEME="random"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -30,7 +30,7 @@ ZSH_THEME="nicoulaj_custom-macke"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+#ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 #COMPLETION_WAITING_DOTS="true"

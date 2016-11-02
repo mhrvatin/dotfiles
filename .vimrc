@@ -53,3 +53,7 @@ let g:molokai_original = 1
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=124 guibg=lightgrey
+
+" transparent background
+hi Normal ctermbg=none
+hi NonText ctermbg=none

@@ -9,9 +9,16 @@
 !URxvt*colorUL:      #ffff99
 
 ! stormtrooper
-URxvt*background:   #1a1a1a
+!URxvt*background:   #1a1a1a
+!URxvt*foreground:   #cccccc
+!URxvt*cursorColor:  #fd50a2
+!URxvt*colorBD:      #ffffff
+!URxvt*colorUL:      #ffffff
+
+! mallard
+URxvt*background:   #1B5E20
 URxvt*foreground:   #cccccc
-URxvt*cursorColor:  #fd50a2
+URxvt*cursorColor:  #ffffff
 URxvt*colorBD:      #ffffff
 URxvt*colorUL:      #ffffff
 
@@ -39,23 +46,23 @@ URxvt*color14:      #99FFCC
 !WHT
 URxvt*color7:       #CCCCCC
 URxvt*color15:      #FFFFFF
-!urxvt fonts: 
 
+!urxvt fonts: 
 URxvt*font: xft:Monospace:pixelsize=12
 URxvt*boldFont: xft:Monospace:bold:pixelsize=12
 
+!urxvt transparency
+URxvt.transparent:   true
+URxvt.shading:       30
 
 !urxvt extensions:
-
 URxvt.perl-ext-common:  default,matcher,tabbedex,clipboard
 
 !enabling clickable links:
-
 URxvt.urlLauncher:      /usr/bin/
 URxvt.matcher.button:   1 
 
 !urxvt scrolling options and cursor style:
-
 URxvt*saveLines: 12000
 URxvt*scrollstyle:plain
 URxvt*scrollBar: false
@@ -63,7 +70,6 @@ URxvt*cursorBlink: true
 URxvt*cursorUnderline: true
 
 ! urxvt tabs settings:
-
 URxvt.tabbed.tabbar-fg: 2
 URxvt.tabbed.tabbar-bg: 0
 URxvt.tabbed.tab-fg: 2
@@ -72,22 +78,36 @@ URxvt.tabbed.autohide:  yes
 URxvt.tabbed.new-button:  no
 URxvt.tabbed.title: noUrxvt.color12: rgb:5c/5c/ff
 
+URxvt.iso14755: False
+URxvt.keysym.Control-C: perl:clipboard:copy
+URxvt.keysym.Control-V: perl:clipboard:paste
 
 ! ROFI Color theme
-! snowy
 rofi.color-enabled: true
+! snowy
 !rofi.color-window: #112938,#fafafa
 !rofi.color-normal: #112938, #fafafa, #112938, #516978, #fafafa
 !rofi.color-active: #fafafa, #112938, #fafafa, #fafafa, #112938
 !rofi.color-urgent: #f44336, #fafafa, #f44336, #f44336, #fafafa
 
-rofi.color-window: #0f0f0f,#fafafa
-rofi.color-normal: #0f0f0f, #fafafa, #0f0f0f, #fd50a2, #fafafa
-rofi.color-active: #fafafa, #112938, #fafafa, #fafafa, #112938
-rofi.color-urgent: #f44336, #fafafa, #f44336, #f44336, #fafafa
+! stormtrooper
+!rofi.color-window: #0f0f0f,#fafafa
+!rofi.color-normal: #0f0f0f, #fafafa, #0f0f0f, #fd50a2, #fafafa
+!rofi.color-active: #fafafa, #000000, #fafafa, #fafafa, #000000
+!rofi.color-urgent: #f44336, #fafafa, #f44336, #f44336, #fafafa
+
+! mallard
+!rofi.color-window: #1b5e20,#fafafa
+!rofi.color-normal: #1b5e20, #fafafa, #1b5e20, #cddc39, #fafafa
+!rofi.color-active: #fafafa, #000000, #fafafa, #fafafa, #000000
+!rofi.color-urgent: #c62828, #fafafa, #c62828, #c62828, #fafafa
+
+! autumn trees
+rofi.color-window: #856b3c,#fafafa
+rofi.color-normal: #856b3c, #fafafa, #856b3c, #8a7459, #fafafa
+rofi.color-active: #fafafa, #000000, #fafafa, #fafafa, #000000
+rofi.color-urgent: #c62828, #fafafa, #c62828, #c62828, #fafafa
 
 rofi.font: System San Francisco Display 10
+rofi.opacity: 50
 
-URxvt.iso14755: False
-URxvt.keysym.Control-C: perl:clipboard:copy
-URxvt.keysym.Control-V: perl:clipboard:paste
