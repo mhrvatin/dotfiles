@@ -210,7 +210,7 @@ exec urxvt
 exec /usr/bin/compton --config /home/macke/.compton.conf
 exec xset r rate 200 30
 exec ~/scripts/disable-touchpad-typing.sh
-exec $ xinput set-prop "SynPS/2 Synaptics Touchpad" "Synaptics Tap Time" 0
+exec xinput set-prop "ETPS/2 Elantech Touchpad" "Synaptics Tap Time" 0
 
 # disable screensaver
 exec xset s off
