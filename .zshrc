@@ -37,16 +37,23 @@ else
 fi
 
 alias 'home=cd ~/'
+alias 'skola=cd ~/documents/skola/'
+alias 'web=cd /var/www/html'
+
 alias 'vimz=vim ~/.zshrc'
 alias 'srcz=source ~/.zshrc'
-alias 'skola=cd ~/documents/skola/'
+alias 'nt=urxvt &'
+
 alias 'hysus=systemctl hybrid-sleep'
 alias 'hibernate=systemctl hibernate'
 alias 'reboot=systemctl reboot'
+
 alias 'binero=ssh 139580_mhrvatin@ssh.binero.se'
 alias 'digm=ssh macke@vps.hrvatin.se'
 alias 'digr=ssh root@vps.hrvatin.se'
+
 alias 'copy=xclip -sel clip'
+
 alias 'install=sudo apt-get install'
 alias 'update=sudo apt-get update'
 alias 'upgrade=sudo apt-get upgrade'
