@@ -172,10 +172,16 @@ bindsym $mod+r mode "resize"
 #set $text-color           #fafafa
 
 # autumn trees
-set $bg-color             #8A7459
-set $inactive-bg-color    #8A7459
+#set $bg-color             #8A7459
+#set $inactive-bg-color    #8A7459
+#set $text-color           #fafafa
+#set $inactive-text-color  #404040
+
+# eddard stark
+set $bg-color             #194b90
+set $inactive-bg-color    #194b90
 set $text-color           #fafafa
-set $inactive-text-color  #404040
+set $inactive-text-color  #737373
 
 set $urgent-bg-color      #F44336
 
@@ -203,7 +209,7 @@ bar {
 }
 
 # set wallpaper
-exec_always --no-startup-id feh --bg-scale /home/macke/pictures/ds8IpAP.jpg
+exec_always --no-startup-id feh --bg-scale /home/macke/pictures/69T9Qz1.png
 
 # run at startup
 exec urxvt

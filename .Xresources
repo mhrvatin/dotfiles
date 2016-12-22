@@ -103,11 +103,17 @@ rofi.color-enabled: true
 !rofi.color-urgent: #c62828, #fafafa, #c62828, #c62828, #fafafa
 
 ! autumn trees
-rofi.color-window: #856b3c,#fafafa
-rofi.color-normal: #856b3c, #fafafa, #856b3c, #8a7459, #fafafa
+!rofi.color-window: #856b3c,#fafafa
+!rofi.color-normal: #856b3c, #fafafa, #856b3c, #8a7459, #fafafa
+!rofi.color-active: #fafafa, #000000, #fafafa, #fafafa, #000000
+!rofi.color-urgent: #c62828, #fafafa, #c62828, #c62828, #fafafa
+
+! eddard stark
+rofi.color-window: #194b90,#fafafa
+rofi.color-normal: #194b90, #fafafa, #194b90, #337adc, #fafafa
 rofi.color-active: #fafafa, #000000, #fafafa, #fafafa, #000000
 rofi.color-urgent: #c62828, #fafafa, #c62828, #c62828, #fafafa
 
-rofi.font: System San Francisco Display 10
-!rofi.opacity: 50
 
+!rofi.opacity: 50
+rofi.font: System San Francisco Display 10

@@ -5,9 +5,9 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="af-magic_custom-macke"
+ZSH_THEME="af-magic_custom-macke"
 #ZSH_THEME="nicoulaj_custom-macke"
-ZSH_THEME="wedisagree_custom-macke_mallard"
+#ZSH_THEME="wedisagree_custom-macke_mallard"
 #ZSH_THEME="random"
 
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
