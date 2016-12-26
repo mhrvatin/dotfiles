@@ -2,11 +2,11 @@
 !URxvt*boldFont:     -artwiz-lime-medium-r-normal-*-10-110-75-75-m-50-iso8859-1
 
 ! snowy
-!URxvt*background:   #516978
-!URxvt*foreground:   #cccccc
-!URxvt*cursorColor:  #999999
-!URxvt*colorBD:      #ffffff
-!URxvt*colorUL:      #ffff99
+URxvt*background:   #516978
+URxvt*foreground:   #cccccc
+URxvt*cursorColor:  #999999
+URxvt*colorBD:      #ffffff
+URxvt*colorUL:      #ffff99
 
 ! stormtrooper
 !URxvt*background:   #1a1a1a
@@ -16,11 +16,11 @@
 !URxvt*colorUL:      #ffffff
 
 ! mallard
-URxvt*background:   #1B5E20
-URxvt*foreground:   #cccccc
-URxvt*cursorColor:  #ffffff
-URxvt*colorBD:      #ffffff
-URxvt*colorUL:      #ffffff
+!URxvt*background:   #1B5E20
+!URxvt*foreground:   #cccccc
+!URxvt*cursorColor:  #ffffff
+!URxvt*colorBD:      #ffffff
+!URxvt*colorUL:      #ffffff
 
 !BLK
 URxvt*color0:       #666666
@@ -85,10 +85,10 @@ URxvt.keysym.Control-V: perl:clipboard:paste
 ! ROFI Color theme
 rofi.color-enabled: true
 ! snowy
-!rofi.color-window: #112938,#fafafa
-!rofi.color-normal: #112938, #fafafa, #112938, #516978, #fafafa
-!rofi.color-active: #fafafa, #112938, #fafafa, #fafafa, #112938
-!rofi.color-urgent: #f44336, #fafafa, #f44336, #f44336, #fafafa
+rofi.color-window: #112938,#fafafa
+rofi.color-normal: #112938, #fafafa, #112938, #516978, #fafafa
+rofi.color-active: #fafafa, #112938, #fafafa, #fafafa, #112938
+rofi.color-urgent: #f44336, #fafafa, #f44336, #f44336, #fafafa
 
 ! stormtrooper
 !rofi.color-window: #0f0f0f,#fafafa
@@ -109,10 +109,10 @@ rofi.color-enabled: true
 !rofi.color-urgent: #c62828, #fafafa, #c62828, #c62828, #fafafa
 
 ! eddard stark
-rofi.color-window: #194b90,#fafafa
-rofi.color-normal: #194b90, #fafafa, #194b90, #337adc, #fafafa
-rofi.color-active: #fafafa, #000000, #fafafa, #fafafa, #000000
-rofi.color-urgent: #c62828, #fafafa, #c62828, #c62828, #fafafa
+!rofi.color-window: #194b90,#fafafa
+!rofi.color-normal: #194b90, #fafafa, #194b90, #337adc, #fafafa
+!rofi.color-active: #fafafa, #000000, #fafafa, #fafafa, #000000
+!rofi.color-urgent: #c62828, #fafafa, #c62828, #c62828, #fafafa
 
 
 !rofi.opacity: 50

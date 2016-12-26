@@ -154,10 +154,10 @@ bindsym $mod+r mode "resize"
 
 # color variables
 # snowy
-#set $bg-color 	          #112938
-#set $inactive-bg-color   #112938
-#set $inactive-text-color  #757575
-#set $text-color           #fafafa
+set $bg-color 	          #112938
+set $inactive-bg-color   #112938
+set $inactive-text-color  #757575
+set $text-color           #fafafa
 
 # stormtrooper
 #set $bg-color            #000000
@@ -178,10 +178,10 @@ bindsym $mod+r mode "resize"
 #set $inactive-text-color  #404040
 
 # eddard stark
-set $bg-color             #194b90
-set $inactive-bg-color    #194b90
-set $text-color           #fafafa
-set $inactive-text-color  #737373
+#set $bg-color             #194b90
+#set $inactive-bg-color    #194b90
+#set $text-color           #fafafa
+#set $inactive-text-color  #737373
 
 set $urgent-bg-color      #F44336
 
@@ -209,7 +209,10 @@ bar {
 }
 
 # set wallpaper
+# eddard stark
 exec_always --no-startup-id feh --bg-scale /home/macke/pictures/69T9Qz1.png
+# snowy
+exec_always --no-startup-id feh --bg-scale /home/macke/pictures/o2bTNqW.png
 
 # run at startup
 exec urxvt
@@ -217,6 +220,7 @@ exec /usr/bin/compton --config /home/macke/.compton.conf
 exec xset r rate 200 30
 exec ~/scripts/disable-touchpad-typing.sh
 exec xinput set-prop "ETPS/2 Elantech Touchpad" "Synaptics Tap Time" 0
+exec /home/macke/apps/xflux -l 56.2 -g 15.6
 
 # disable screensaver
 exec xset s off
@@ -238,7 +242,7 @@ bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 
 # disable window titlebars entirely
-for_window [class="^.*"] border none
+for_window [class="^.*"] border pixel 0
 
 ####################
 # i3-gaps settings #
