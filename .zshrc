@@ -47,10 +47,12 @@ alias 'nt=urxvt &'
 alias 'hysus=systemctl hybrid-sleep'
 alias 'hibernate=systemctl hibernate'
 alias 'reboot=systemctl reboot'
+alias 'shutdown=systemctl poweroff'
 
 alias 'binero=ssh 139580_mhrvatin@ssh.binero.se'
 alias 'digm=ssh macke@vps.hrvatin.se'
 alias 'digr=ssh root@vps.hrvatin.se'
+alias 'pi=ssh pi@192.168.0.113'
 
 alias 'copy=xclip -sel clip'
 
