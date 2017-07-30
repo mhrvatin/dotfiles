@@ -1,59 +1,52 @@
-!URxvt*font:         -artwiz-lime-medium-r-normal-*-10-110-75-75-m-50-iso8859-1
-!URxvt*boldFont:     -artwiz-lime-medium-r-normal-*-10-110-75-75-m-50-iso8859-1
+! appearance
+URxvt*depth:            32
+URxvt*background:       #263238
+URxvt*foreground:       #FFFFFF
+URxvt.underlineColor:   #4682B4
+URxvt.highlightColor:   #4682B4
+URxvt.throughColor:     Blue
+URxvt*cursorColor:      #C5C8C6
+URxvt*cursorColor2:     #Black
+URxvt*internalBorder:   15
+URxvt*externalBorder:   0
+URxvt.colorIT:          #87AF5F
+URxvt.colorBD:          #C5C8C6
+URxvt.colorUL:          #87AFD7
+URxvt*saveLines:        12000
+URxvt*scrollBar:        false
+URxvt*scrollBar_right:  false
+URxvt*scrollstyle:      plain
+URxvt*cursorBlink:      true
+URxvt*cursorUnderline:  true
 
-! snowy
-URxvt*background:   #516978
-URxvt*foreground:   #cccccc
-URxvt*cursorColor:  #999999
-URxvt*colorBD:      #ffffff
-URxvt*colorUL:      #ffff99
+xterm*dynamicColors: true
+urxvt*dynamicColors: on
 
-! stormtrooper
-!URxvt*background:   #1a1a1a
-!URxvt*foreground:   #cccccc
-!URxvt*cursorColor:  #fd50a2
-!URxvt*colorBD:      #ffffff
-!URxvt*colorUL:      #ffffff
+! colors
+URxvt*color0:   #25283D
+URxvt*color1:   #ecdf8e
+URxvt*color2:   #07bee8
+URxvt*color3:   #84dcc6
+URxvt*color4:   #0a8754
+URxvt*color5:   #af3b6e
+URxvt*color6:   #cbf30f
+URxvt*color7:   #edddd4
+URxvt*color8:   #709080
+URxvt*color9:   #ee2e31
+URxvt*color10:  #e83f6f
+URxvt*color11:  #f0dfaf
+URxvt*color12:  #04bff3
+URxvt*color13:  #ffbf00
+URxvt*color14:  #1cfeba
+URxvt*color15:  #ffffff
 
-! mallard
-!URxvt*background:   #1B5E20
-!URxvt*foreground:   #cccccc
-!URxvt*cursorColor:  #ffffff
-!URxvt*colorBD:      #ffffff
-!URxvt*colorUL:      #ffffff
 
-!BLK
-URxvt*color0:       #666666
-URxvt*color8:       #999999
-!RED
-URxvt*color1:       #CC6699
-URxvt*color9:	      #FF99CC
-!GRN
-URxvt*color2:       #99CC66
-URxvt*color10:      #CCFF99
-!YEL
-URxvt*color3:       #CC9966
-URxvt*color11:      #FFCC99
-!BLU
-URxvt*color4:       #6699CC
-URxvt*color12:      #99CCFF
-!MAG
-URxvt*color5:       #9966CC
-URxvt*color13:      #CC99FF
-!CYN
-URxvt*color6:       #66CC99
-URxvt*color14:      #99FFCC
-!WHT
-URxvt*color7:       #CCCCCC
-URxvt*color15:      #FFFFFF
-
-!urxvt fonts: 
-URxvt*font: xft:Monospace:pixelsize=12
-URxvt*boldFont: xft:Monospace:bold:pixelsize=12
-
-!urxvt transparency
-URxvt.transparent:   true
-URxvt.shading:       25
+! fonts
+URxvt*font:           xft:ctrld:size=15
+URxvt*imFont:         xft:ctrld:size=15
+URxvt*boldFont:       xft:ctrld:size=15
+URxvt*italicFont:     xft:ctrld:size=15
+URxvt*boldItalicFont: xft:ctrld:size=15
 
 !urxvt extensions:
 URxvt.perl-ext-common:  default,matcher,tabbedex,clipboard
@@ -61,13 +54,6 @@ URxvt.perl-ext-common:  default,matcher,tabbedex,clipboard
 !enabling clickable links:
 URxvt.urlLauncher:      /usr/bin/
 URxvt.matcher.button:   1 
-
-!urxvt scrolling options and cursor style:
-URxvt*saveLines: 12000
-URxvt*scrollstyle:plain
-URxvt*scrollBar: false
-URxvt*cursorBlink: true
-URxvt*cursorUnderline: true
 
 ! urxvt tabs settings:
 URxvt.tabbed.tabbar-fg: 2
@@ -81,39 +67,3 @@ URxvt.tabbed.title: noUrxvt.color12: rgb:5c/5c/ff
 URxvt.iso14755: False
 URxvt.keysym.Control-C: perl:clipboard:copy
 URxvt.keysym.Control-V: perl:clipboard:paste
-
-! ROFI Color theme
-rofi.color-enabled: true
-! snowy
-rofi.color-window: #112938,#fafafa
-rofi.color-normal: #112938, #fafafa, #112938, #516978, #fafafa
-rofi.color-active: #fafafa, #112938, #fafafa, #fafafa, #112938
-rofi.color-urgent: #f44336, #fafafa, #f44336, #f44336, #fafafa
-
-! stormtrooper
-!rofi.color-window: #0f0f0f,#fafafa
-!rofi.color-normal: #0f0f0f, #fafafa, #0f0f0f, #fd50a2, #fafafa
-!rofi.color-active: #fafafa, #000000, #fafafa, #fafafa, #000000
-!rofi.color-urgent: #f44336, #fafafa, #f44336, #f44336, #fafafa
-
-! mallard
-!rofi.color-window: #1b5e20,#fafafa
-!rofi.color-normal: #1b5e20, #fafafa, #1b5e20, #cddc39, #fafafa
-!rofi.color-active: #fafafa, #000000, #fafafa, #fafafa, #000000
-!rofi.color-urgent: #c62828, #fafafa, #c62828, #c62828, #fafafa
-
-! autumn trees
-!rofi.color-window: #856b3c,#fafafa
-!rofi.color-normal: #856b3c, #fafafa, #856b3c, #8a7459, #fafafa
-!rofi.color-active: #fafafa, #000000, #fafafa, #fafafa, #000000
-!rofi.color-urgent: #c62828, #fafafa, #c62828, #c62828, #fafafa
-
-! eddard stark
-!rofi.color-window: #194b90,#fafafa
-!rofi.color-normal: #194b90, #fafafa, #194b90, #337adc, #fafafa
-!rofi.color-active: #fafafa, #000000, #fafafa, #fafafa, #000000
-!rofi.color-urgent: #c62828, #fafafa, #c62828, #c62828, #fafafa
-
-
-!rofi.opacity: 50
-rofi.font: System San Francisco Display 10

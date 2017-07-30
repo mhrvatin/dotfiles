@@ -5,9 +5,10 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="af-magic_custom-macke"
+#ZSH_THEME="af-magic_custom-macke"
 #ZSH_THEME="nicoulaj_custom-macke"
 #ZSH_THEME="wedisagree_custom-macke_mallard"
+ZSH_THEME="example"
 #ZSH_THEME="random"
 
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
@@ -50,8 +51,8 @@ alias 'reboot=systemctl reboot'
 alias 'shutdown=systemctl poweroff'
 
 alias 'binero=ssh 139580_mhrvatin@ssh.binero.se'
-alias 'digm=ssh macke@vps.hrvatin.se'
-alias 'digr=ssh root@vps.hrvatin.se'
+alias 'digm=ssh macke@vps.hrvatin.se -X'
+alias 'digr=ssh root@vps.hrvatin.se -X'
 alias 'pi=ssh pi@192.168.0.113'
 
 alias 'copy=xclip -sel clip'
