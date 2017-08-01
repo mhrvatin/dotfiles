@@ -1,17 +1,17 @@
 ! appearance
 URxvt*depth:            32
 URxvt*background:       #263238
-URxvt*foreground:       #FFFFFF
-URxvt.underlineColor:   #4682B4
-URxvt.highlightColor:   #4682B4
+URxvt*foreground:       #ffffff
+URxvt.underlineColor:   #4682b4
+URxvt.highlightColor:   #4682b4
 URxvt.throughColor:     Blue
-URxvt*cursorColor:      #C5C8C6
+URxvt*cursorColor:      #c5c8c6
 URxvt*cursorColor2:     #Black
 URxvt*internalBorder:   15
 URxvt*externalBorder:   0
-URxvt.colorIT:          #87AF5F
-URxvt.colorBD:          #C5C8C6
-URxvt.colorUL:          #87AFD7
+URxvt.colorIT:          #87af5f
+URxvt.colorBD:          #c5c8c6
+URxvt.colorUL:          #87afd7
 URxvt*saveLines:        12000
 URxvt*scrollBar:        false
 URxvt*scrollBar_right:  false
@@ -23,7 +23,7 @@ xterm*dynamicColors: true
 urxvt*dynamicColors: on
 
 ! colors
-URxvt*color0:   #25283D
+URxvt*color0:   #25283d
 URxvt*color1:   #ecdf8e
 URxvt*color2:   #07bee8
 URxvt*color3:   #84dcc6
@@ -39,7 +39,6 @@ URxvt*color12:  #04bff3
 URxvt*color13:  #ffbf00
 URxvt*color14:  #1cfeba
 URxvt*color15:  #ffffff
-
 
 ! fonts
 URxvt*font:           xft:ctrld:size=15
@@ -64,6 +63,15 @@ URxvt.tabbed.autohide:  yes
 URxvt.tabbed.new-button:  no
 URxvt.tabbed.title: noUrxvt.color12: rgb:5c/5c/ff
 
+! ?
 URxvt.iso14755: False
 URxvt.keysym.Control-C: perl:clipboard:copy
 URxvt.keysym.Control-V: perl:clipboard:paste
+
+! rofi
+rofi.color-enabled: true
+rofi.color-window: #37474f
+rofi.color-normal: #37474f, #fafafa, #37474f, #617d8b, #fafafa
+rofi.color-active: #757575, #fafafa, #757575, #757575, #fafafa
+rofi.color-urgent: #f44336, #fafafa, #f44336, #f44336, #fafafa
+rofi.font: ctrld 16
