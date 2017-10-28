@@ -1,0 +1,16 @@
+#!/bin/bash
+name=`iwconfig wls2 | grep ESSID | awk '{print $4}' | tr -d 'ESID:"'`
+if [ $name == "off/any" ]
+then
+  echo $'\uf1eb' # fontawesome wifi
+  echo $'\uf1eb' # fontawesome wifi
+	echo \#F44336  # red 500
+else
+  echo $'\uf1eb' # fontawesome wifi
+  echo $'\uf1eb' # fontawesome wifi
+  echo \#8BC34A  # light green 500
+fi
+
+case $BLOCK_BUTTON in
+    1) unity-control-center network ;; # left click
+esac

@@ -1,0 +1,22 @@
+#!/bin/bash
+mute=`amixer get Master | grep "Mono:" | awk '{print $6}'`
+vol=`amixer get Master | grep "Mono:" | awk '{print $4}' | tr -d '[%]'`
+if [ $mute == "[on]" ] ; then
+  if [ $vol -ge 50 ] ; then 
+    echo $'\uf028' $vol%  # fontawesome volume-up
+    echo $'\uf028' $vol%  # fontawesome volume-up
+    echo "#BDBDBD"        # grey 400
+  elif [ $vol -lt 50 ] ; then
+    echo $'\uf027' $vol%  # fontawesome volume-down
+    echo $'\uf027' $vol%  # fontawesome volume-down
+    echo "#BDBDBD"        # grey 400
+  fi
+else
+  echo $'\uf026'          # fontawesome volume-off
+  echo $'\uf026'          # fontawesome volume-off
+  echo "#F44336"          # green 500
+fi
+
+case $BLOCK_BUTTON in
+    2) unity-control-center network ;;
+esac
