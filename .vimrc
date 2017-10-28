@@ -11,6 +11,11 @@ Plugin 'lilydjwg/colorizer'
 call vundle#end()
 filetype plugin indent on
 
+set nocompatible  " make vim improved
+set backspace=indent,eol,start
+set noshowmode    " no default-mode indicator
+set laststatus=2
+
 autocmd vimenter * NERDTree
 set relativenumber
 set numberwidth=2
@@ -27,7 +32,3 @@ let g:airline_theme = 'gruvbox'
 colorscheme gruvbox
 set background=dark
 syntax enable
-
-" transparent background
-hi Normal ctermbg=none
-hi NonText ctermbg=none

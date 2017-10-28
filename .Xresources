@@ -6,7 +6,7 @@ URxvt.underlineColor:   #4682b4
 URxvt.highlightColor:   #4682b4
 URxvt.throughColor:     Blue
 URxvt*cursorColor:      #c5c8c6
-URxvt*cursorColor2:     #Black
+URxvt*cursorColor2:     Black
 URxvt*internalBorder:   15
 URxvt*externalBorder:   0
 URxvt.colorIT:          #87af5f
@@ -18,50 +18,84 @@ URxvt*scrollBar_right:  false
 URxvt*scrollstyle:      plain
 URxvt*cursorBlink:      true
 URxvt*cursorUnderline:  true
+URxvt.letterSpace:      1
 
-xterm*dynamicColors: true
-urxvt*dynamicColors: on
+URxvt*dynamicColors: on
 
 ! colors
-URxvt*color0:   #25283d
-URxvt*color1:   #ecdf8e
-URxvt*color2:   #07bee8
-URxvt*color3:   #84dcc6
-URxvt*color4:   #0a8754
-URxvt*color5:   #af3b6e
-URxvt*color6:   #cbf30f
-URxvt*color7:   #edddd4
-URxvt*color8:   #709080
-URxvt*color9:   #ee2e31
-URxvt*color10:  #e83f6f
-URxvt*color11:  #f0dfaf
-URxvt*color12:  #04bff3
-URxvt*color13:  #ffbf00
-URxvt*color14:  #1cfeba
-URxvt*color15:  #ffffff
+! black
+!URxvt*color0:   #25283d
+!URxvt*color8:   #709080
+! red
+!URxvt*color1:   #ecdf8e
+!URxvt*color9:   #ee2e31
+! green 
+!URxvt*color2:   #07bee8
+!URxvt*color10:  #e83f6f
+! yellow 
+!URxvt*color3:   #84dcc6
+!URxvt*color11:  #f0dfaf
+! blue 
+!URxvt*color4:   #0a8754
+!URxvt*color12:  #04bff3
+! magenta
+!URxvt*color5:   #af3b6e
+!URxvt*color13:  #ffbf00
+! cyan 
+!URxvt*color6:   #cbf30f
+!URxvt*color14:  #1cfeba
+! white
+!URxvt*color7:   #edddd4
+!URxvt*color15:  #ffffff
+
+! colors
+! black
+URxvt*color0:   #282828
+URxvt*color8:   #928374
+! red
+URxvt*color1:   #cc241d
+URxvt*color9:   #fb4934
+! green 
+URxvt*color2:   #98971a
+URxvt*color10:  #b8bb26
+! yellow 
+URxvt*color3:   #d79921
+URxvt*color11:  #fabd2f
+! blue 
+URxvt*color4:   #458588
+URxvt*color12:  #83a589
+! magenta
+URxvt*color5:   #b16286
+URxvt*color13:  #d3869b
+! cyan 
+URxvt*color6:   #689d6a
+URxvt*color14:  #8ec07c
+! white
+URxvt*color7:   #a89984
+URxvt*color15:  #ebdbb2
 
 ! fonts
-URxvt*font:           xft:ctrld:size=15
-URxvt*imFont:         xft:ctrld:size=15
-URxvt*boldFont:       xft:ctrld:size=15
-URxvt*italicFont:     xft:ctrld:size=15
-URxvt*boldItalicFont: xft:ctrld:size=15
+URxvt*font:           xft:ctrld:pixelsize=15
+URxvt*imFont:         xft:ctrld:pixelsize=15
+URxvt*boldFont:       xft:ctrld:pixelsize=15
+URxvt*italicFont:     xft:ctrld:pixelsize=15
+URxvt*boldItalicFont: xft:ctrld:pixelsize=15
 
 !urxvt extensions:
-URxvt.perl-ext-common:  default,matcher,tabbedex,clipboard
+URxvt.perl-ext-common:  default,matcher,clipboard
 
 !enabling clickable links:
 URxvt.urlLauncher:      /usr/bin/
 URxvt.matcher.button:   1 
 
 ! urxvt tabs settings:
-URxvt.tabbed.tabbar-fg: 2
-URxvt.tabbed.tabbar-bg: 0
-URxvt.tabbed.tab-fg: 2
-URxvt.tabbed.tab-bg: 8
-URxvt.tabbed.autohide:  yes
+URxvt.tabbed.tabbar-fg:   2
+URxvt.tabbed.tabbar-bg:   0
+URxvt.tabbed.tab-fg:      2
+URxvt.tabbed.tab-bg:      8
+URxvt.tabbed.autohide:    yes
 URxvt.tabbed.new-button:  no
-URxvt.tabbed.title: noUrxvt.color12: rgb:5c/5c/ff
+URxvt.tabbed.title:       noUrxvt.color12: rgb:5c/5c/ff
 
 ! ?
 URxvt.iso14755: False
@@ -74,4 +108,4 @@ rofi.color-window: #37474f
 rofi.color-normal: #37474f, #fafafa, #37474f, #617d8b, #fafafa
 rofi.color-active: #757575, #fafafa, #757575, #757575, #fafafa
 rofi.color-urgent: #f44336, #fafafa, #f44336, #f44336, #fafafa
-rofi.font: ctrld 16
+rofi.font: ctrld 13

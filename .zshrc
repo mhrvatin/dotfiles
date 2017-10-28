@@ -1,36 +1,23 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/macke/.oh-my-zsh
+export ZSH=/home/macke/.oh-my-zsh
 
-# Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-#ZSH_THEME="af-magic_custom-macke"
-#ZSH_THEME="nicoulaj_custom-macke"
 ZSH_THEME="wedisagree_custom-macke_flower"
-#ZSH_THEME="example_custom-macke"
 #ZSH_THEME="random"
 
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="yyyy-mm-dd"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize ubuntu)
+plugins=(colorize last-working-dir colored-man-pages extract safe-paste)
 
-# User configuration
-
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
 source $ZSH/oh-my-zsh.sh
 
-# You may need to manually set your language environment
 export LANG=sv_SE.UTF-8
 
-# Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
@@ -44,16 +31,16 @@ alias 'web=cd /var/www/html'
 alias 'vimz=vim ~/.zshrc'
 alias 'srcz=source ~/.zshrc'
 alias 'nt=urxvt &'
+alias 'chrome=google-chrome'
 
 alias 'hysus=systemctl hybrid-sleep'
 alias 'hibernate=systemctl hibernate'
 alias 'reboot=systemctl reboot'
 alias 'shutdown=systemctl poweroff'
 
-alias 'binero=ssh 139580_mhrvatin@ssh.binero.se'
 alias 'digm=ssh macke@vps.hrvatin.se -X'
 alias 'digr=ssh root@vps.hrvatin.se -X'
-alias 'pi=ssh pi@192.168.0.113'
+alias 'pi=ssh pi@192.168.0.113 -X'
 
 alias 'copy=xclip -sel clip'
 
