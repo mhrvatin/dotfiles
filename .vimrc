@@ -7,6 +7,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'morhetz/gruvbox'
 Plugin 'lilydjwg/colorizer'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 filetype plugin indent on

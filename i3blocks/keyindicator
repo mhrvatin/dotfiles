@@ -23,8 +23,8 @@ use File::Basename;
 
 # Default values
 my $indicator = $ENV{BLOCK_INSTANCE} || "CAPS";
-my $color_on  = "#4CAF50";
-my $color_off = "#BDBDBD";
+my $color_on  = "#8BC34A"; # light green 500
+my $color_off = "#BDBDBD"; # grey 400
 
 sub help {
     my $program = basename($0);

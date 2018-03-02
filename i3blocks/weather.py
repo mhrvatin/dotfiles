@@ -2,28 +2,25 @@
 from bs4 import BeautifulSoup
 import urllib
 
-THERMO_EMPTY = "<span font='FontAwesome'>\uf2cb</span>"
-THERMO_QUARTER = "<span font='FontAwesome'>\uf2ca</span>"
-THERMO_HALF = "<span font='FontAwesome'>\uf2c9</span>"
-THERMO_THREE_QUARTERS = "<span font='FontAwesome'>\uf2c8</span>"
-THERMO_FULL = "<span font='FontAwesome'>\uf2c7</span>"
-SNOW = "<span font='FontAwesome'>\uf2dc</span>"
-BAN = "<span font='FontAwesome'>\uf05e</span> "
+THERMO_EMPTY            = "<span font='FontAwesome'>\uf2cb</span>"
+THERMO_QUARTER          = "<span font='FontAwesome'>\uf2ca</span>"
+THERMO_HALF             = "<span font='FontAwesome'>\uf2c9</span>"
+THERMO_THREE_QUARTERS   = "<span font='FontAwesome'>\uf2c8</span>"
+THERMO_FULL             = "<span font='FontAwesome'>\uf2c7</span>"
+SNOW                    = "<span font='FontAwesome'>\uf2dc</span>"
+BAN                     = "<span font='FontAwesome'>\uf05e</span> "
 
-url = "https://www.yr.no/sted/Sverige/Blekinge/Karlskrona/time_for_time.html"
+url = "http://climendo.com/en/weather/sweden/karlskrona-2701713"
 
-yr = urllib.request.urlopen(url)
-# catch exception/no internet connection
-soup = BeautifulSoup(yr)
+page = urllib.request.urlopen(url)
+soup = BeautifulSoup(page, "lxml")
 
-table = soup.find_all("table", class_ = "yr-table-hourly")
-td = table[0].find_all("td", class_ = "temperature")
-
-temp = td[2].getText()[0:2]
+span = soup.find_all("span", class_ = "temp")
+temp = span[0].string[:-2]
 
 if int(temp) >= 25:                         # 25 - inf
-    print("<span color='#F44336'>" + THERMO_FULL + " sjukt varmt</span>")
-    print("<span color='#F44336'>" + THERMO_FULL + " sjukt varmt</span>")
+    print("<span color='#F44336'>" + THERMO_FULL + " tvärvarmt</span>")
+    print("<span color='#F44336'>" + THERMO_FULL + " tvärvarmt</span>")
 elif int(temp) >= 20 and int(temp) < 25:    # 20 - 24
     print("<span color='#F44336'>" + THERMO_THREE_QUARTERS + " varmt</span>")
     print("<span color='#F44336'>" + THERMO_THREE_QUARTERS + " varmt</span>")

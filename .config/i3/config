@@ -12,7 +12,7 @@ bindsym $mod+Return exec urxvt
 
 bindsym $mod+Shift+q kill
 
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu -i'
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -nb #37474F -nf #ffffff'
 
 bindsym $mod+j focus left
